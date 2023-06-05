@@ -1,0 +1,58 @@
+
+/* for reactifyign all scroll-bars*/
+
+.panel1 .panel2{
+    height:100vh;
+    overflow:scroll;
+
+ }
+
+.panel_1{
+    background-color:#d7e6dc;
+    padding:30px;
+    overflow: scroll;
+    
+}
+.panel_1::-webkit-scrollbar{
+    height: 20px;
+    width: 20px;
+}
+.panel_1::-webkit-scrollbar-track{
+     border-radius: 20px;
+
+}
+.panel_1::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color:rgb(26, 119, 111);
+
+}
+
+
+
+
+
+
+
+
+
+
+ /* for-spliting height */
+ .split-sash-content {
+    width: 13px;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.split-sash-content.split-sash-content-vscode.split-sash-content-active {
+    background-color: gray;
+}
+.split-sash-content{
+    background-color:gray;
+}
+
+
+
+
+
+
