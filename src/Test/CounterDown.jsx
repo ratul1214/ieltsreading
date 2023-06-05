@@ -10,10 +10,7 @@ import React, { useEffect, useRef, useState } from 'react'
      return munites + ":" + seconds
       
   }
-
-
-
-
+  
  function CounterDown({Second}) {
    const[countWodn , setCountDown] = useState(Second);
    const timerId = useRef();
