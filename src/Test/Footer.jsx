@@ -8,12 +8,14 @@ import {BsRocketTakeoff} from "react-icons/bs";
 import {BsChevronUp} from "react-icons/bs";
 import {BiTime} from "react-icons/bi";
 import { AiOutlineDown } from "react-icons/ai";
+import Preview from './Pages/Preview';
 
 // end importing
 
 
  function Footer() {
   const[toggleForFooter , setToggleForFootter] = useState(false);
+  const[togglePreview , settogglePreview] = useState(false);
 
 
 
@@ -29,7 +31,7 @@ import { AiOutlineDown } from "react-icons/ai";
      bottom:0;
      right:0;
      left:0;
-     z-index: 100000;
+     z-index: 111;
 
        .div_1{
         height: 3.8rem;
@@ -142,10 +144,12 @@ import { AiOutlineDown } from "react-icons/ai";
                             <span><CounterDown Second={3060}/></span>        
                   </div>
 
+
+
                   <div className="right_btn div_colum">
                                 <div className="buttons">
                                       <button className='btn'><i><BsRocketTakeoff /> </i> Submit</button>
-                                      <button className='btn'> <i><FaRegEye /></i> Review</button>
+                                      <button className='btn' onClick={() =>{settogglePreview(!togglePreview)}}> <i><FaRegEye /></i> Review</button>
                                 </div>
                                   <i className="right_icon icons" onClick={() =>{setToggleForFootter(!toggleForFooter)}}>
                                           {
@@ -154,6 +158,15 @@ import { AiOutlineDown } from "react-icons/ai";
                                   </i>
                   </div>
              </div>
+
+
+
+
+{/* for showing the Preview Sections */}
+
+   {
+     togglePreview && <Preview />
+   }
 
 
 {/* for showing how much user done */}
