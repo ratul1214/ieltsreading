@@ -17,15 +17,8 @@ import Panel2Q_3 from "./Test/Pages/Panel2Q_3"
 
 // end of importing.....
 
-function Reading() {
+function Reading({handleValueChangeforReading}) {
     const [sizes, setSizes] = useState([100,'10%','auto',]);
-  //form states----------->>>
-  const [users , setUsers] = useState()  
-
-const handleDatapanel2 =(x) =>{
-    console.log(x.value)
-};
-
 
 
     return (
@@ -43,9 +36,9 @@ const handleDatapanel2 =(x) =>{
                         </Pane>
                                <div className='panel_2' style={{ height:"100%"  ,overflow:"scroll"}}>
                                      <Routes>
-                                            <Route path='/' element={<Panel2  onhandleDataForReading={handleDatapanel2}/>}/>
-                                            <Route path='/Question_2' element={<Panel2Q_2/>}/>
-                                            <Route path='/Question_3' element={<Panel2Q_3 />}/>
+                                            <Route path='/' element={<Panel2 handleValueChangeforReading={handleValueChangeforReading}/>}/>
+                                            <Route path='/Question_2' element={<Panel2Q_2 handleValueChangeforReading={handleValueChangeforReading}/>}/>
+                                            <Route path='/Question_3' element={<Panel2Q_3 handleValueChangeforReading={handleValueChangeforReading}/>}/>
                                     </Routes>
                              </div>
 

@@ -13,7 +13,7 @@ import Preview from './Pages/Preview';
 // end importing
 
 
- function Footer() {
+ function Footer({handleValueChangeforReading}) {
   const[toggleForFooter , setToggleForFootter] = useState(false);
   const[togglePreview , settogglePreview] = useState(false);
 
@@ -21,6 +21,14 @@ import Preview from './Pages/Preview';
 
 
 
+
+
+
+
+
+
+
+  
   // for this component Css style----------
      const Wrapper = styled.section`
      line-height:0;

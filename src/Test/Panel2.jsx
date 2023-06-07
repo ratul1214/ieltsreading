@@ -8,11 +8,11 @@ import { Link } from 'react-router-dom';
 
 
 
- function Panel2({props}) {
+ function Panel2({handleValueChangeforReading}) {
 //states---
   const[showNotePad , setShowNotePad] = useState(false);
-  //from states--
-  const [formValuesStore , setFormValuesStore] = useState({})
+  //from states--if needed..
+  const [formValuesStore , setFormValuesStore] = useState()
   
 
 
@@ -20,16 +20,6 @@ import { Link } from 'react-router-dom';
 
 
 //handle ---On changes--
-   const handleValueChange =(x) =>{
-         const Names = x.target.name;
-         const values = x.target.value;
-
-    setFormValuesStore((prevValues) =>{
-       return {...prevValues ,[Names]: values}
-    });
-    props.onhandleDataForReading(formValuesStore)
-
-   }
 
 
 
@@ -167,11 +157,11 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the main factor effecting rates :
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChangeforReading}>
+                                                      <option value="something1">something11</option>
+                                                      <option value="something2">something22</option>
+                                                      <option value="something3">something33</option>
+                                                      <option value="something4">something44</option>
                                                 </select>
                                    </div>
 
@@ -180,11 +170,11 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        A picture of urban life taken over by nature : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
+                                                <select name="panel2_divSelector2"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
+                                                      <option value="something1">something11</option>
+                                                      <option value="something2">something22</option>
+                                                      <option value="something3">something33</option>
+                                                      <option value="something4">something44</option>
                                                 </select>
                                    </div>
 
@@ -193,11 +183,11 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        expriences of enviromental damage caused by humans : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
+                                                <select name="panel2_divSelector3"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
+                                                      <option value="something1">something1</option>
+                                                      <option value="something2">something2</option>
+                                                      <option value="something3">something3</option>
+                                                      <option value="something4">something4</option>
                                                 </select>
                                    </div>
 
@@ -206,11 +196,11 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        Positive result from a study : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
+                                                <select name="panel2_divSelector4"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
+                                                      <option value="something1">something11</option>
+                                                      <option value="something2">something22</option>
+                                                      <option value="something3">something33</option>
+                                                      <option value="something4">something44</option>
                                                 </select>
                                    </div>
 
@@ -219,11 +209,11 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
-                                                      <option value="something">something</option>
+                                                <select name="panel2_divSelector5"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
+                                                      <option value="something1">something11</option>
+                                                      <option value="something2">something22</option>
+                                                      <option value="something3">something33</option>
+                                                      <option value="something4">something44</option>
                                                 </select>
                                    </div>
                          </div>
@@ -239,53 +229,59 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange}/>
+                                                <input type="text" name="ques6"  id="ques6"  className='inputs' onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>7</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  onChange={handleValueChange}/>
+                                                <input type="text" name='ques7' id="ques7" className='inputs'  onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>8</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  onChange={handleValueChange}/>
+                                                <input type="text" name='ques8'   id="ques8" className='inputs'  onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>9</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
+                                                <input type="text" name="ques9"  id="ques9" className='inputs' onChange={handleValueChangeforReading} />
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>10</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
+                                                <input type="text" name="ques10"   id="ques10"  className='inputs' onChange={handleValueChangeforReading} />
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>11</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
+                                                <input type="text" name="ques11"  id="ques11" className='inputs' onChange={handleValueChangeforReading} />
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>12</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
+                                                <input type="text" name="ques12" id="ques12"  className='inputs' onChange={handleValueChangeforReading} />
                                    </div>
 
 
-
+                                   <div className="questions">
+                                                <h1  className='numberOfQuestion'>13</h1>
+                                                <label htmlFor="ques1Label">
+                                                     ation gathered from scientific records : 
+                                                </label>
+                                                <input type="text" name="ques13" id="ques12" className='inputs' onChange={handleValueChangeforReading} />
+                                   </div>
 
                             
                   </div> 

@@ -21,7 +21,7 @@
     
 }
 .panel_1::-webkit-scrollbar{
-    width: 13px;
+    width: 12px;
 }
 .panel_1::-webkit-scrollbar-track{
      border-radius: 20px;

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 
 
- function Panel2Q_3() {
+ function Panel2Q_3({handleValueChangeforReading }) {
   const[showNotePad , setShowNotePad] = useState(false)
 
 
@@ -129,15 +129,15 @@ const Wrapper = styled.section`
 
                <form action="#" className="panel2_div3">
                          <div className="form_divsQuestions">
-                                  <h3>Questions 28 - 40</h3>
+                                  <h3>Questions 30 - 40</h3>
                                   <h3>Which paragraph containsWhich paragraph contains Which: </h3> 
                                   
                                    <div className="questions">
-                                              <h1  className='numberOfQuestion'>29</h1>
+                                              <h1  className='numberOfQuestion'>30</h1>
                                                 <label htmlFor="ques1Label">
                                                       the main factor effecting rates :
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector30" id="panel2_divSelector1" onChange={handleValueChangeforReading}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -146,11 +146,11 @@ const Wrapper = styled.section`
                                    </div>
 
                                    <div className="questions">
-                                             <h1  className='numberOfQuestion'>30</h1>
+                                             <h1  className='numberOfQuestion'>31</h1>
                                                 <label htmlFor="ques1Label">
                                                        A picture of urban life taken over by nature : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector31"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -159,11 +159,11 @@ const Wrapper = styled.section`
                                    </div>
 
                                    <div className="questions">
-                                                  <h1  className='numberOfQuestion'>31</h1>
+                                                  <h1  className='numberOfQuestion'>32</h1>
                                                 <label htmlFor="ques1Label">
                                                        expriences of enviromental damage caused by humans : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector32"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -172,11 +172,11 @@ const Wrapper = styled.section`
                                    </div>
 
                                    <div className="questions">
-                                                 <h1  className='numberOfQuestion'>32</h1>
+                                                 <h1  className='numberOfQuestion'>33</h1>
                                                 <label htmlFor="ques1Label">
                                                        Positive result from a study : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector33"  id="panel2_divSelector1" onChange={handleValueChangeforReading}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -185,11 +185,11 @@ const Wrapper = styled.section`
                                    </div>
 
                                    <div className="questions">
-                                               <h1  className='numberOfQuestion'>33</h1>
+                                               <h1  className='numberOfQuestion'>34</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector34" id="panel2_divSelector1" onChange={handleValueChangeforReading}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -205,100 +205,52 @@ const Wrapper = styled.section`
                               <h3>Question 6-9</h3> 
                               <h3>Write <span>NO MORE THAN TWO WORDS AND/OR A NUMBER </span> for each answer,</h3>              
                               <div className="questions">
-                                               <h1  className='numberOfQuestion'>6</h1>
+                                               <h1  className='numberOfQuestion'>35</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'/>
+                                                <input type="text" name="ques45"  id="ques6" className='inputs' onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>7</h1>
+                                                <h1  className='numberOfQuestion'>36</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' />
+                                                <input type="text" name="ques36"  id="ques6" className='inputs' onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>8</h1>
+                                                <h1  className='numberOfQuestion'>37</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques37"  id="ques6" className='inputs'  onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>38</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text"  name="ques38" id="ques6" className='inputs'  onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>39</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text"  name="ques39" id="ques6" className='inputs'  onChange={handleValueChangeforReading}/>
                                    </div>
                                    <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
+                                                <h1  className='numberOfQuestion'>40</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
-                                   </div>
-                                   <div className="questions">
-                                                <h1  className='numberOfQuestion'>9</h1>
-                                                <label htmlFor="ques1Label">
-                                                     ation gathered from scientific records : 
-                                                </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques40"  id="ques6" className='inputs' onChange={handleValueChangeforReading} />
                                    </div>
 
 
 
                             
                   </div> 
-
-
-{/* questions 10-13 numbers */}
-
-                <div className="form_divsQuestions">
-                        <h3>Question 10 -13</h3> 
-                        <h3>Complete the summary with <strong>ONE WORD</strong> from the text.</h3>              
-                                   <div className="questions">
-                                                <h1  className='numberOfQuestion'>10</h1>
-                                                <label htmlFor="ques1Label">
-                                                Ms Jones and Dr Schmitz believe that people are more interested in preserving or returning : 
-                                                </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
-                                   </div>
-                                   <div className="questions">
-                                                <h1  className='numberOfQuestion'>11</h1>
-                                                <label htmlFor="ques1Label">
-                                                to a present-day condition rather than to their original: 
-                                                </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
-                                   </div>
-                                   <div className="questions">
-                                                <h1  className='numberOfQuestion'>12</h1>
-                                                <label htmlFor="ques1Label">
-                                                     ation gathered from scientific records : 
-                                                </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
-                                   </div>
-                                   <div className="questions">
-                                                <h1  className='numberOfQuestion'>13</h1>
-                                                <label htmlFor="ques1Label">
-                                                     ation gathered from : 
-                                                </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
-                                   </div>         
- 
-
-
-
-                </div>
-
 
 
                </form>
