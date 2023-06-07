@@ -19,13 +19,17 @@ import Panel2Q_3 from "./Test/Pages/Panel2Q_3"
 
 function Reading() {
     const [sizes, setSizes] = useState([100,'10%','auto',]);
+  //form states----------->>>
+  const [users , setUsers] = useState()  
 
-
+const handleDatapanel2 =(x) =>{
+    console.log(x.value)
+};
 
 
 
     return (
-        <div style={{height:558}}>
+        <div className='mainContainer' style={{height:558}}>
               <BrowserRouter>
                     <SplitPane split='vertical' sizes={sizes} onChange={setSizes}>
                         <Pane minSize={100} maxSize='50%'>
@@ -39,7 +43,7 @@ function Reading() {
                         </Pane>
                                <div className='panel_2' style={{ height:"100%"  ,overflow:"scroll"}}>
                                      <Routes>
-                                            <Route path='/' element={<Panel2 />}/>
+                                            <Route path='/' element={<Panel2  onhandleDataForReading={handleDatapanel2}/>}/>
                                             <Route path='/Question_2' element={<Panel2Q_2/>}/>
                                             <Route path='/Question_3' element={<Panel2Q_3 />}/>
                                     </Routes>

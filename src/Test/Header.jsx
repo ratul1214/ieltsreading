@@ -30,11 +30,12 @@ import {BsChevronUp} from "react-icons/bs"
        line-height:0;
 
   .first_row{
-    padding:13px;
+    padding:10px;
     display:grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap:2rem;
-  justify-content: center;
+    margin-right:50px;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap:1rem;
+  justify-content: space-evenly;
   align-items: center;
   z-index:1;
   background:#fff;
@@ -43,6 +44,7 @@ import {BsChevronUp} from "react-icons/bs"
             display:grid;
             grid-template-columns: auto auto;
             grid-column-gap:12px;
+            margin-right:-20px;
                 .div_1{
                   width:120px;
                   height:120px;
@@ -80,6 +82,7 @@ import {BsChevronUp} from "react-icons/bs"
 // -----
           .divs_2{
             color:black;
+            margin-right:-20px;
                .sub_1{
                 display: flex;
                 column-gap:13px;
@@ -116,6 +119,7 @@ import {BsChevronUp} from "react-icons/bs"
           .divs_3{
             text-align:center;
             line-height:22px;
+            margin-right:-20px;
                  i{
                   font-size:4.4rem;
                   color : blue;
@@ -126,10 +130,28 @@ import {BsChevronUp} from "react-icons/bs"
                  }
           }
 
+          .divs_4{
+            line-height:2.6rem;
+            font-size:3rem;
+            color:skyblue;
+                span{
+                  font-size:4rem;
+                }
+          }
 
-// secont---row
+
+
+
+
+
+
+
+
+
+
+// secont---row------------
         .second_row { 
-                height:45px;
+                height:47px;
                   display:flex;
                   justify-content:center;
                   align-items:center;
@@ -166,12 +188,13 @@ import {BsChevronUp} from "react-icons/bs"
         }
 
         .logo-for-header{
-          line-height:15px;
-             font-size:1.5rem;
+          line-height:12px;
+             font-size:1.3rem;
              color:skyblue;
           span{
-            font-size:2rem;
-            margin-left:3px;
+            font-size:3rem;
+            padding-left:3px;
+            margin-bottom:4rem;
           }
         }
   `
@@ -187,7 +210,7 @@ import {BsChevronUp} from "react-icons/bs"
                         {/* for-toggle-section    */}
                         { toggleTestInfo && (<div className="first_row">
 
-                                      <div className="divs_1">
+                              <div className="divs_1">
                                               <div className="div_1">
                                                       <h1>IELTS</h1>
                                                       <p>AC Reading..</p>
@@ -228,6 +251,13 @@ import {BsChevronUp} from "react-icons/bs"
                                             <i><MdSettingsVoice /></i>
                                             <p>LISTENING PRACTICE TEST 1</p>
                                       </div>
+
+                                     <div className="divs_4">
+                                           <h3>IELTS <br /> <span>.</span> LIve</h3>
+                                     </div>
+ 
+
+
                                 </div>
                 )};
 {/* second_row ------------*/}
@@ -267,9 +297,10 @@ import {BsChevronUp} from "react-icons/bs"
                     </ul>
                       </div>
                       
-                    <div className="logo-for-header">
-                          <h3>IELTS <br /> <span>.</span> LIve</h3>
-                    </div>
+                           {
+                             toggleTestInfo ? "" : (<div className="logo-for-header"><h3>IELTS <br /> <span>.</span> LIve</h3>
+                       </div>)
+                           }
                   </div>  
           
         </Wrapper>

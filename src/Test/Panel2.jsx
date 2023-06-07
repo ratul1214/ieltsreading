@@ -8,8 +8,34 @@ import { Link } from 'react-router-dom';
 
 
 
- function Panel2() {
-  const[showNotePad , setShowNotePad] = useState(false)
+ function Panel2({props}) {
+//states---
+  const[showNotePad , setShowNotePad] = useState(false);
+  //from states--
+  const [formValuesStore , setFormValuesStore] = useState({})
+  
+
+
+
+
+
+//handle ---On changes--
+   const handleValueChange =(x) =>{
+         const Names = x.target.name;
+         const values = x.target.value;
+
+    setFormValuesStore((prevValues) =>{
+       return {...prevValues ,[Names]: values}
+    });
+    props.onhandleDataForReading(formValuesStore)
+
+   }
+
+
+
+
+
+
 
 
 
@@ -141,7 +167,7 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the main factor effecting rates :
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -154,7 +180,7 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        A picture of urban life taken over by nature : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -167,7 +193,7 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        expriences of enviromental damage caused by humans : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -180,7 +206,7 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                        Positive result from a study : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -193,7 +219,7 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <select name="panel2_divSelector1" id="panel2_divSelector1">
+                                                <select name="panel2_divSelector1" id="panel2_divSelector1" onChange={handleValueChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -213,49 +239,49 @@ padding:30px;
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'/>
+                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>7</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs' />
+                                                <input type="text" name="ques6" id="ques6" className='inputs'  onChange={handleValueChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>8</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques6" id="ques6" className='inputs'  onChange={handleValueChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>9</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>9</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>9</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>9</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text" name="ques6" id="ques6" className='inputs'  />
+                                                <input type="text" name="ques6" id="ques6" className='inputs' onChange={handleValueChange} />
                                    </div>
 
 

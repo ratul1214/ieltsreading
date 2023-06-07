@@ -1,9 +1,16 @@
 
+/*for mainContainer height set-up*/
+   .mainContainer{
+     min-height: 560px;
+     max-height: 100vh;
+   
+   }
+
 /* for reactifyign all scroll-bars*/
 
 .panel1 .panel2{
-    height:100vh;
     overflow:scroll;
+    margin-bottom: 20px;
 
  }
 
@@ -14,25 +21,17 @@
     
 }
 .panel_1::-webkit-scrollbar{
-    height: 20px;
-    width: 20px;
+    width: 13px;
 }
 .panel_1::-webkit-scrollbar-track{
      border-radius: 20px;
 
 }
 .panel_1::-webkit-scrollbar-thumb{
-    border-radius: 20px;
+    border-radius: 50px;
     background-color:rgb(26, 119, 111);
 
 }
-
-
-
-
-
-
-
 
 
 
