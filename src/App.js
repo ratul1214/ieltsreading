@@ -8,12 +8,13 @@ import { useState } from 'react';
 
 
 function App() {
-
+// const[forChangeColor , setForChangeColor] = useState()
  //send all exam data to Review Page---- 
           const [UserData , setUserdata] = useState({});
-              const handleChange =(x) =>{
-                setUserdata(x);
-              }
+                      const handleChange =(x) =>{
+                            setUserdata(x);
+                            // setForChangeColor("blue");
+                        }
 
 
           
@@ -24,7 +25,7 @@ function App() {
                       <header className="App-header">
                         <Reading handleChange={handleChange}/>
                     </header>
-                <Footer  UserData={UserData}/>
+                <Footer  UserData={UserData} />
     </div>
   )
 }

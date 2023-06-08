@@ -12,11 +12,11 @@ function Preview({UserData}) {
               {
                 CloseReview && (
               <div className="ReviewContainer">
-                  <div className="div_1">
+                  <div className="Review_div_1">
                         <h1 className='nameReview'>Review</h1>
                   </div>
   
-              <div className="div_2">
+              <div className="Review_div_2">
                      <div className="div">Q1: {UserData.ques1}</div>
                      <div className="div">Q2:{UserData.ques2}</div>
                      <div className="div">Q3:{UserData.ques3}</div>
@@ -87,7 +87,7 @@ export default Preview
 
 const Wrapper = styled.section`
 .ReviewContainer {
-    height:510px;
+    height:520px;
    width: 800px;
    border: 1px solid green;
    position: fixed;
@@ -98,7 +98,7 @@ const Wrapper = styled.section`
    box-sizing: border-box;
    transition: 0.5s all ease-in-out;
 }
- .div_1{
+ .Review_div_1{
            width:100%;
            border:none;
            background-color:#fff; 
@@ -109,7 +109,7 @@ const Wrapper = styled.section`
                      padding-left:14px;
                    }
        }
-   .div_2{
+   .Review_div_2{
      height:auto;
      background:#fff;
      box-sizing: border-box;
