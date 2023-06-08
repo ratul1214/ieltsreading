@@ -12,129 +12,9 @@ import Preview from './Pages/Preview';
 
 // end importing
 
-
- function Footer({handleValueChangeforReading}) {
+ function Footer({UserData}) {
   const[toggleForFooter , setToggleForFootter] = useState(false);
   const[togglePreview , settogglePreview] = useState(false);
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  // for this component Css style----------
-     const Wrapper = styled.section`
-     line-height:0;
-     height:auto;
-     width:100%
-     background:red;
-     position:fixed;
-     bottom:0;
-     right:0;
-     left:0;
-     z-index: 111;
-
-       .div_1{
-        height: 3.8rem;
-        width:100%;
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: repeat(3 , 1fr);
-        justify-content: center;
-        align-items: center;
-        background: rgb(17, 22, 44);
-        margin-bottom:-8px;
-       
-
-                  .icons{
-                    font-size:1.2rem;
-                  }
-                      .div_colum{
-                            color:#fff;
-                            display:flex;
-                      }
-      
-                  .left_btn{
-                        margin-left:60px;
-                        i{
-                           padding-top:10px;
-                           margin-right:15px;
-                        }
-                  }
-
-                  .timer{
-                      margin:auto;
-                      i{
-                        padding-top:17px;
-                        margin-right:13px;
-                      }
-                      span{
-                         font-size:1.4rem;
-                      }
-                  }
-
-                  .right_btn{
-                      .buttons{
-                        padding-left:50px;
-                        display:flex;
-                                 .btn{
-                                      width:90px;
-                                      height:40px;
-                                      margin:7px;
-                                      font-size:1rem;
-                                      display:flex;
-                                      justify-content:center;
-                                      align-items:center;
-
-                                       i{
-                                         margin-right:3px;
-                                       }
-                                  }
-                      }  
-                        .right_icon{
-                          margin-left:auto;
-                          margin-right:15px;
-                          font-size:1.8rem;
-                          font-weight: 500;
-                        }    
-                  }
-                  
-      
-       }
-
-
-//div_2_________
-
-        .div_2{
-             background-color: rgb(17, 22, 44);
-
-                height:130px;
-                display:flex;
-                flex-wrap:wrap;
-                padding:30px;
-                box-sizing: border-box;
-                transition: 0.3s all;
-
-                   .div_2_divs{
-                      width:27px;
-                      height:27px;
-                      margin:4px;
-                      border-radius: 50%;
-                      background: aqua;
-                   }
-        }
-
-
-
-     `
-
 
 
 //main-----------     
@@ -167,14 +47,19 @@ import Preview from './Pages/Preview';
                   </div>
              </div>
 
-
-
-
 {/* for showing the Preview Sections */}
 
-   {
-     togglePreview && <Preview />
-   }
+ {
+  togglePreview && <Preview  UserData={UserData}/>
+ }
+
+<div className="div5">
+
+</div>
+
+
+
+
 
 
 {/* for showing how much user done */}
@@ -235,3 +120,111 @@ import Preview from './Pages/Preview';
 
 
 export default Footer
+
+
+  
+  // for this component Css style----------
+  const Wrapper = styled.section`
+  line-height:0;
+  height:auto;
+  width:100%;
+  background:red;
+  position:fixed;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index: 111;
+
+    .div_1{
+     height: 3.8rem;
+     width:100%;
+     box-sizing: border-box;
+     display: grid;
+     grid-template-columns: repeat(3 , 1fr);
+     justify-content: center;
+     align-items: center;
+     background: rgb(17, 22, 44);
+     margin-bottom:-8px;
+    
+
+               .icons{
+                 font-size:1.2rem;
+               }
+                   .div_colum{
+                         color:#fff;
+                         display:flex;
+                   }
+   
+               .left_btn{
+                     margin-left:60px;
+                     i{
+                        padding-top:10px;
+                        margin-right:15px;
+                     }
+               }
+
+               .timer{
+                   margin:auto;
+                   i{
+                     padding-top:17px;
+                     margin-right:13px;
+                   }
+                   span{
+                      font-size:1.4rem;
+                   }
+               }
+
+               .right_btn{
+                   .buttons{
+                     padding-left:50px;
+                     display:flex;
+                              .btn{
+                                   width:90px;
+                                   height:40px;
+                                   margin:7px;
+                                   font-size:1rem;
+                                   display:flex;
+                                   justify-content:center;
+                                   align-items:center;
+
+                                    i{
+                                      margin-right:3px;
+                                    }
+                               }
+                   }  
+                     .right_icon{
+                       margin-left:auto;
+                       margin-right:15px;
+                       font-size:1.8rem;
+                       font-weight: 500;
+                     }    
+               }
+               
+   
+    }
+
+
+//div_2_________
+
+     .div_2{
+          background-color: rgb(17, 22, 44);
+
+             height:130px;
+             display:flex;
+             flex-wrap:wrap;
+             padding:30px;
+             box-sizing: border-box;
+             transition: 0.3s all;
+
+                .div_2_divs{
+                   width:27px;
+                   height:27px;
+                   margin:4px;
+                   border-radius: 50%;
+                   background: aqua;
+                }
+     }
+
+  `
+
+

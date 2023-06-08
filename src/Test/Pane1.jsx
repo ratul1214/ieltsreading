@@ -8,7 +8,39 @@ import Styled from "styled-components"
 
 
  function Panel1() {
-       const Wrapper = Styled.section`
+       
+  return (
+    <Wrapper>
+                    <div className="panel_div_1">
+                         <h1>Reading Passages 1</h1>
+                            <h1>Question : 1-13</h1>
+                            <h1>Ecosystem Can Fight Back</h1>
+                    </div>
+                    <div className="panel_div_2">
+                           <p><span>A</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum  optio assumenda nostrum quas sunt?</p>
+
+                           <p><span>B</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum optio assumenda nostrum quas sunt?</p>
+
+                           <p><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
+                           <p><span>A</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum  optio assumenda nostrum quas sunt?</p>
+
+                           <p><span>B</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum optio assumenda nostrum quas sunt?</p>
+
+                           <p><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
+
+                     </div>   
+
+    </Wrapper>
+  )
+} 
+
+
+export default Panel1
+
+
+
+//for stylinng this component........
+const Wrapper = Styled.section`
                    height: auto;
                     text-align:justify;
                     width: 100%;
@@ -38,31 +70,3 @@ import Styled from "styled-components"
 
 
 
-
-  return (
-    <Wrapper>
-                    <div className="panel_div_1">
-                         <h1>Reading Passages 1</h1>
-                            <h1>Question : 1-13</h1>
-                            <h1>Ecosystem Can Fight Back</h1>
-                    </div>
-                    <div className="panel_div_2">
-                           <p><span>A</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum  optio assumenda nostrum quas sunt?</p>
-
-                           <p><span>B</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum optio assumenda nostrum quas sunt?</p>
-
-                           <p><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
-                           <p><span>A</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum  optio assumenda nostrum quas sunt?</p>
-
-                           <p><span>B</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum optio assumenda nostrum quas sunt?</p>
-
-                           <p><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
-
-                     </div>   
-
-    </Wrapper>
-  )
-} 
-
-
-export default Panel1

@@ -17,10 +17,14 @@ import Panel2Q_3 from "./Test/Pages/Panel2Q_3"
 
 // end of importing.....
 
-function Reading({handleValueChangeforReading}) {
+function Reading({handleChange}) {
     const [sizes, setSizes] = useState([100,'10%','auto',]);
 
 
+
+
+
+//main rendering-----
     return (
         <div className='mainContainer' style={{height:558}}>
               <BrowserRouter>
@@ -36,9 +40,9 @@ function Reading({handleValueChangeforReading}) {
                         </Pane>
                                <div className='panel_2' style={{ height:"100%"  ,overflow:"scroll"}}>
                                      <Routes>
-                                            <Route path='/' element={<Panel2 handleValueChangeforReading={handleValueChangeforReading}/>}/>
-                                            <Route path='/Question_2' element={<Panel2Q_2 handleValueChangeforReading={handleValueChangeforReading}/>}/>
-                                            <Route path='/Question_3' element={<Panel2Q_3 handleValueChangeforReading={handleValueChangeforReading}/>}/>
+                                            <Route path='/' element={<Panel2  handleChange={handleChange}/>}/>
+                                            <Route path='/Question_2' element={<Panel2Q_2  handleChange={handleChange}/>}/>
+                                            <Route path='/Question_3' element={<Panel2Q_3 handleChange={handleChange}/>}/>
                                     </Routes>
                              </div>
 

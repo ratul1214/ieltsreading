@@ -8,35 +8,7 @@ import Styled from "styled-components"
 
 
  function Pane1Q_3() {
-       const Wrapper = Styled.section`
-                   height: auto;
-                    text-align:justify;
-                    width: 100%;
-                    
-                 .panel_div_1{
-                    margin-top:10px;
-                    line-height:14px;
-                    h1{
-                         font-size:1rem;
-                    }
-                 }
-                 .panel_div_2{
-                      
-                      p{
-                        font-size:.9rem;;
-                          padding-bottom:17px;
-                        span{
-                             font-size:1.4rem;
-                             color:red;
-                        }
-                      }
-                 }
-               
-       `
-
-
-
-
+    
 
   return (
     <Wrapper>
@@ -70,3 +42,36 @@ import Styled from "styled-components"
 
 
 export default Pane1Q_3
+
+
+
+
+  // for styling----
+  const Wrapper = Styled.section`
+  height: auto;
+   text-align:justify;
+   width: 100%;
+   
+.panel_div_1{
+   margin-top:10px;
+   line-height:14px;
+   h1{
+        font-size:1rem;
+   }
+}
+.panel_div_2{
+     
+     p{
+       font-size:.9rem;;
+         padding-bottom:17px;
+       span{
+            font-size:1.4rem;
+            color:red;
+       }
+     }
+}
+
+`
+
+
+
