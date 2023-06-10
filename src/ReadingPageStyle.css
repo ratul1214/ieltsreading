@@ -9,15 +9,14 @@
 /* for reactifyign all scroll-bars*/
 
 .panel1 .panel2{
-    overflow:scroll;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 
  }
 
 .panel_1{
     background-color:#d7e6dc;
     padding:30px;
-    overflow: scroll;
     
 }
 .panel_1::-webkit-scrollbar{

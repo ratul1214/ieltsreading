@@ -8,29 +8,48 @@ import { useState } from 'react';
 
 
 function App() {
-// const[forChangeColor , setForChangeColor] = useState()
+  const [fontSize , setFontSize] = useState(20);
+const[forChangeColor , setForChangeColor] = useState(null)
  //send all exam data to Review Page---- 
           const [UserData , setUserdata] = useState({});
                       const handleChange =(x) =>{
                             setUserdata(x);
-                            // setForChangeColor("blue");
-                        }
+                            setForChangeColor("green");
+                          }
 
 
           
+
+//functions for FontSize----setup
+        const handleIncressFontSize =() =>{
+            setFontSize(fontSize => fontSize + 2)
+        };
+        const handleDecressFontSize =() =>{
+          setFontSize(fontSize => fontSize - 2)
+        }
+
+
+
+
 //main rendering---              
   return (
     <div className="App">
-                 <Header />
-                      <header className="App-header">
+                 <Header  handleDecressFontSize={handleDecressFontSize} handleIncressFontSize={handleIncressFontSize}/>
+                      <header className="App-header" style={{fontSize:fontSize}}>
                         <Reading handleChange={handleChange}/>
                     </header>
-                <Footer  UserData={UserData} />
+                <Footer  UserData={UserData} forChangeColor={forChangeColor}/>
     </div>
   )
 }
 
 export default App;
+
+
+
+
+
+
 
 
 

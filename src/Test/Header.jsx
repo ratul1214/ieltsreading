@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 // import {BrowserRouter, Route, Routes} from "react-router";
-import { AiOutlineDown } from "react-icons/ai";
 import styled from 'styled-components';
 
-//icons---
+//icons---------
+import {BsArrowUp} from "react-icons/bs";
+import {BsArrowDown} from "react-icons/bs";
+import { AiOutlineDown } from "react-icons/ai";
 import {BsShare } from "react-icons/bs";
-import {BsSortAlphaDown } from "react-icons/bs";
+import {FaTextWidth } from "react-icons/fa";
 import {BsFillExclamationTriangleFill } from "react-icons/bs";
-import {  FaDownload } from "react-icons/fa";
+import {FaDownload } from "react-icons/fa";
 import {FaQuestionCircle} from "react-icons/fa";
 import {BsFillCloudHaze2Fill} from "react-icons/bs";
 import {TbArrowBigLeftLinesFilled} from "react-icons/tb";
@@ -16,11 +18,11 @@ import {AiOutlineEye} from "react-icons/ai";
 import {BsFillCheckSquareFill} from "react-icons/bs"
 import {MdSettingsVoice} from "react-icons/md";
 import {BsChevronUp} from "react-icons/bs"
-// end of Importing.....
+// end of Importing...........
 
 
 
- function Header() {
+ function Header({handleIncressFontSize , handleDecressFontSize}) {
   const [toggleTestInfo , setToggleTestInfo] = useState(false);
 
 // main sector--------------
@@ -99,7 +101,9 @@ import {BsChevronUp} from "react-icons/bs"
                                       <a href="#"><BsFillExclamationTriangleFill /></a>
                                   </li>
                                   <li className='icon'>
-                                      <a href="#"><BsSortAlphaDown /></a>
+                                        <a href="#"><BsArrowUp onClick={handleIncressFontSize}/></a>
+                                              <a href="#"><FaTextWidth /></a>    
+                                        <a href="#" onClick={handleDecressFontSize}><BsArrowDown /></a>
                                   </li>
                                   <li className='icon'>
                                       <a href="#"><FaDownload /></a>
@@ -307,6 +311,7 @@ background:#fff;
          a{
            text-decoration:none;
            color:black;
+           margin:3px;
 
          }
      }
@@ -323,6 +328,33 @@ background:#fff;
    }
  }
 `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

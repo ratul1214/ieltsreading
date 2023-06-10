@@ -30,7 +30,7 @@ function Reading({handleChange}) {
               <BrowserRouter>
                     <SplitPane split='vertical' sizes={sizes} onChange={setSizes}>
                         <Pane minSize={100} maxSize='50%'>
-                            <div className='panel_1' style={{height:"100%"}}>
+                            <div className='panel_1' style={{height:"100%"  ,overflow:"scroll"}}>
                                     <Routes>
                                             <Route path='/' element={<Panel1 />}/>
                                             <Route path='/Question_2' element={<Pane1Q_2 />}/>

@@ -13,9 +13,9 @@ import Styled from "styled-components"
   return (
     <Wrapper>
                     <div className="panel_div_1">
-                         <h1>Reading Passages 3</h1>
-                            <h1>Question :----</h1>
-                            <h1>Ecosystem Can Fight Back</h1>
+                         <h4>Reading Passages 3</h4>
+                            <h4>Question :----</h4>
+                            <h4>Ecosystem Can Fight Back</h4>
                     </div>
                     <div className="panel_div_2">
                            <p><span>A</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum  optio assumenda nostrum quas sunt?</p>
@@ -55,14 +55,10 @@ export default Pane1Q_3
 .panel_div_1{
    margin-top:10px;
    line-height:14px;
-   h1{
-        font-size:1rem;
-   }
 }
 .panel_div_2{
      
      p{
-       font-size:.9rem;;
          padding-bottom:17px;
        span{
             font-size:1.4rem;

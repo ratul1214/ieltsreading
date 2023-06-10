@@ -12,7 +12,8 @@ import Preview from './Pages/Preview';
 
 // end importing
 
- function Footer({UserData}) {
+ function Footer({UserData , forChangeColor}) {
+  console.log(forChangeColor)
   const[toggleForFooter , setToggleForFootter] = useState(false);
   const[togglePreview , settogglePreview] = useState(false);
 
@@ -66,46 +67,47 @@ import Preview from './Pages/Preview';
              {
                 toggleForFooter && (
                   <div className="div_2">
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
-                  <div className="div_2_divs"></div>
+                  <div className="div_2_divs" style={{backgroundColor:forChangeColor}}>1</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>2</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>3</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>4</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>5</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>6</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>7</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>8</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>9</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>10</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>11</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>12</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>13</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>14</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>15</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>16</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>17</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>18</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>19</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>20</div>
+                  
+                  <div className="div_2_divs" style={{backgroundColor:forChangeColor}}>21</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>22</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>23</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>24</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>25</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>26</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>27</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>28</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>29</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>30</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>31</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>32</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>33</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>34</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>35</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>36</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>37</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>38</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>39</div>
+                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>40</div>
            </div>
         )}
 
@@ -217,11 +219,15 @@ export default Footer
              transition: 0.3s all;
 
                 .div_2_divs{
-                   width:27px;
-                   height:27px;
+                   width:30px;
+                   height:30px;
                    margin:4px;
                    border-radius: 50%;
                    background: aqua;
+                   box-sizing:border-box;
+                   text-align:center;
+                   padding-top:14px;
+                   color:black;
                 }
      }
 
