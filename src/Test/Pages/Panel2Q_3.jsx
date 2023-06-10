@@ -210,12 +210,12 @@ padding:30px;
     box-sizing:border-box;
      height:40px;
      width:370px;
-     background:gray;
+     background:#d7e6dc;
      margin-left:auto;
              h1{
                    margin-left:10px;
                    font-size: 1.4rem;
-                   color:#fff;
+                   color:black;
              }  
              .btns{
                    display:flex;

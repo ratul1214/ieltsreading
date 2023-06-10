@@ -12,10 +12,23 @@ import Preview from './Pages/Preview';
 
 // end importing
 
- function Footer({UserData , forChangeColor}) {
-  console.log(forChangeColor)
+ function Footer({UserData }) {
   const[toggleForFooter , setToggleForFootter] = useState(false);
   const[togglePreview , settogglePreview] = useState(false);
+
+
+//----ReviewPage Handeling-----
+        const handleReviewPage =(x) =>{
+          settogglePreview(!togglePreview)
+        }
+
+
+
+
+
+
+
+
 
 
 //main-----------     
@@ -38,7 +51,7 @@ import Preview from './Pages/Preview';
                   <div className="right_btn div_colum">
                                 <div className="buttons">
                                       <button className='btn'><i><BsRocketTakeoff /> </i> Submit</button>
-                                      <button className='btn' onClick={() =>{settogglePreview(!togglePreview)}}> <i><FaRegEye /></i> Review</button>
+                                      <button className='btn' onClick={handleReviewPage}> <i><FaRegEye /></i> Review</button>
                                 </div>
                                   <i className="right_icon icons" onClick={() =>{setToggleForFootter(!toggleForFooter)}}>
                                           {
@@ -51,7 +64,7 @@ import Preview from './Pages/Preview';
 {/* for showing the Preview Sections */}
 
  {
-  togglePreview && <Preview  UserData={UserData}/>
+  togglePreview && <Preview  UserData={UserData} handleReviewPage={handleReviewPage}/>
  }
 
 <div className="div5">
@@ -67,47 +80,48 @@ import Preview from './Pages/Preview';
              {
                 toggleForFooter && (
                   <div className="div_2">
-                  <div className="div_2_divs" style={{backgroundColor:forChangeColor}}>1</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>2</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>3</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>4</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>5</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>6</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>7</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>8</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>9</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>10</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>11</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>12</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>13</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>14</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>15</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>16</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>17</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>18</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>19</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>20</div>
-                  
-                  <div className="div_2_divs" style={{backgroundColor:forChangeColor}}>21</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>22</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>23</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>24</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>25</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>26</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>27</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>28</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>29</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>30</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>31</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>32</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>33</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>34</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>35</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>36</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>37</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>38</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>39</div>
-                  <div className="div_2_divs"  style={{backgroundColor:forChangeColor}}>40</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques1 == false ? "" : "green" }}>1</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques2 == "" ? "" : "green" }}>2</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques3 == "" ? "" : "green" }}>3</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques4 == "" ? "" : "green" }}>4</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques5 == "" ? "" : "green" }}>5</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques6 == "" ? "" : "green" }}>6</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques7 == "" ? "" : "green" }}>7</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques8 == "" ? "" : "green" }}>8</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques9 == "" ? "" : "green" }}>9</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques10 == "" ? "" : "green" }}>10</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques11 == "" ? "" : "green" }}>11</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques12 == "" ? "" : "green" }}>12</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques13 == "" ? "" : "green" }}>13</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques14 == "" ? "" : "green" }}>14</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques15 == "" ? "" : "green" }}>15</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques16 == "" ? "" : "green" }}>16</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques17 == "" ? "" : "green" }}>17</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques18 == "" ? "" : "green" }}>18</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques19 == "" ? "" : "green" }}>19</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques20 == "" ? "" : "green" }}>20</div>
+               
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques21 == "" ? "" : "green" }}>21</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques22 == "" ? "" : "green" }}>22</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques23 == "" ? "" : "green" }}>23</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques24 == "" ? "" : "green" }}>24</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques25 == "" ? "" : "green" }}>25</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques26 == "" ? "" : "green" }}>26</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques27 == "" ? "" : "green" }}>27</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques28 == "" ? "" : "green" }}>28</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques29 == "" ? "" : "green" }}>29</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques30 == "" ? "" : "green" }}>30</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques31 == "" ? "" : "green" }}>31</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques32 == "" ? "" : "green" }}>32</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques33 == "" ? "" : "green" }}>33</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques34 == "" ? "" : "green" }}>34</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques35 == "" ? "" : "green" }}>35</div>
+                  <div className="div_2_divs"  style={{ backgroundColor: UserData.ques36 == "" ? "" : "green" }}>36</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques37 == "" ? "" : "green" }}>37</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques38 == "" ? "" : "green" }}>38</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques39 == "" ? "" : "green" }}>39</div>
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques40 == "" ? "" : "green" }}>40</div>
+                 
            </div>
         )}
 

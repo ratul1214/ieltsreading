@@ -5,12 +5,10 @@ import styled from 'styled-components';
 
 
 
-function Preview({UserData}) {
+function Preview({UserData , handleReviewPage}) {
      const[CloseReview , setCloseReview] = useState(true);
   return (
       <Wrapper>
-              {
-                CloseReview && (
               <div className="ReviewContainer">
                   <div className="Review_div_1">
                         <h1 className='nameReview'>Review</h1>
@@ -65,13 +63,11 @@ function Preview({UserData}) {
               </div>
   
               <div className="div_3">
-                  <button onClick={() =>{setCloseReview(false)}}>Close</button>
+                  <button onClick={handleReviewPage}>Close</button>
               </div>
   
               </div>
   
-                )
-              }
       </Wrapper>
   )
 };
@@ -128,6 +124,7 @@ const Wrapper = styled.section`
          box-sizing: border-box;
          justify-content: start;
          align-items: center;
+         font-weight: 700;
 
         }
    }

@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html{
+  height: 100vh;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -16,4 +19,7 @@ code {
 element.style {
   width: 16px;
   left: 256.065px;
+}
+.App{
+   height: 100vh;
 }

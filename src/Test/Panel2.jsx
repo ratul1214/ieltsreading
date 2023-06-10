@@ -26,46 +26,6 @@ import { Link } from 'react-router-dom';
         
 
 
-
-
-
-
-
-
-
-
-                                                                                                      //from states--
-                                                                                                      // var examData = {}
-
-                                                                                                      // // //handle ---On changes--
-                                                                                                      // //    const handleValueChange =(x) =>{
-                                                                                                      // //          const Names = x.target.name;
-                                                                                                      // //          const values = x.target.value;
-                                                                                                      // //       //    console.log(Names);
-                                                                                                      // //         examData[Names] = values
-                                                                                                      // //        handleChange(examData)
-
-
-                                                                                                      // //    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //main------------------------
     return (
     <Wrapper>
@@ -255,7 +215,7 @@ export default Panel2
 
 // for styling this component via styled-compoennt--  
 const Wrapper = styled.section`
-padding:30px;
+padding:35px;
 
 .palne2_div1{ 
    display:flex;
@@ -264,12 +224,12 @@ padding:30px;
    box-sizing:border-box;
     height:40px;
     width:370px;
-    background:gray;
+    background:#d7e6dc;
        margin-left:auto;
             h1{
                   margin-left:10px;
                   font-size: 1.4rem;
-                  color:#fff;
+                  color:black;
             }  
             .btns{
                   display:flex;

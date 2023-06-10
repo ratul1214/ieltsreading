@@ -26,7 +26,7 @@ function Reading({handleChange}) {
 
 //main rendering-----
     return (
-        <div className='mainContainer' style={{height:558}}>
+        <div className='mainContainer'>
               <BrowserRouter>
                     <SplitPane split='vertical' sizes={sizes} onChange={setSizes}>
                         <Pane minSize={100} maxSize='50%'>
