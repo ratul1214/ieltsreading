@@ -52,16 +52,16 @@ width: 100%;
 margin-top:10px;
 line-height:14px;
 }
-.panel_div_2{
-  
-  p{
-      padding-bottom:17px;
-    span{
-         font-size:1.4rem;
-         color:red;
-    }
-  }
-}
+        .panel_div_2{
+          margin-bottom:100px;
+          p{
+            padding-bottom:5px;
+              span{
+                  font-size:1.4rem;
+                  color:red;
+              }
+            }
+        }
 
 `
 

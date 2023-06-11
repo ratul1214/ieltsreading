@@ -1,29 +1,16 @@
 
 /*for mainContainer height set-up*/
 .mainContainer{
-    height: 558px;
+    height: 100%;
 }
-
-
-/* @media screen and (min-height: 652px){
-    .mainContainer{
-        height: 558px;
-     }
-}
-@media screen and (max-height: 1152px){
-    .mainContainer{
-        height: 1152px;
-     }
-} */
-
 
 /* for reactifyign all scroll-bars*/
 
-.panel1 .panel2{
+/* .panel1 .panel2{
     margin-bottom: 20px;
     padding-bottom: 20px;
 
- }
+ } */
 
 .panel_1{
     background-color:#d7e6dc;

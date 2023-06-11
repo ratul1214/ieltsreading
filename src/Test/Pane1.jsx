@@ -26,7 +26,7 @@ import Styled from "styled-components"
 
                            <p><span>B</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum optio assumenda nostrum quas sunt?</p>
 
-                           <p><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
+                           <p className='lastArticle'><span>C</span> ipsum dolor sit amet consectetur adipisicing elit. Officiis eius totam, voluptatum quasi sit eaque adipisci culpa, voluptatibus molestiae consequatur ea nam quas iste amet explicabo. Amet excepturi ab doloremque accusamus ipsam ullam cupiditate. Sequi animi, culpa adipisci laboriosam fugiat laudantium molestiae voluptates, illo ipsum sit magni suscipit quisquam illum delectus vero  pariatur eos quia. Accusantium adipisci quidem placeat optio assumenda nostrum quas sunt?</p>
 
                      </div>   
 
@@ -45,6 +45,7 @@ const Wrapper = Styled.section`
                     text-align:justify;
                     width: 100%;
                     overflow: auto;
+                   
 
                  .panel_div_1{
                     margin-top:10px;
@@ -52,9 +53,9 @@ const Wrapper = Styled.section`
 
                  }
                  .panel_div_2{
-                      
+                        padding-bottom:100px;
                       p{
-                          padding-bottom:17px;
+                          padding-bottom:5px;
                         span{
                              font-size:1.4rem;
                              color:red;

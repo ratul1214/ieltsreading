@@ -265,6 +265,7 @@ padding:35px;
 
 //panel2_div3------form-styling--------
                  .panel2_div3{
+                  padding-bottom:30px;
                        .form_divsQuestions{
                                     h3{
                                           margin-top:-1px;

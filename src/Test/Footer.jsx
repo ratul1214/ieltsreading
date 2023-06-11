@@ -120,8 +120,9 @@ import Preview from './Pages/Preview';
                   <div className="div_2_divs" style={{ backgroundColor: UserData.ques37 == "" ? "" : "green" }}>37</div>
                   <div className="div_2_divs" style={{ backgroundColor: UserData.ques38 == "" ? "" : "green" }}>38</div>
                   <div className="div_2_divs" style={{ backgroundColor: UserData.ques39 == "" ? "" : "green" }}>39</div>
-                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques40 == "" ? "" : "green" }}>40</div>
-                 
+                  <div className="div_2_divs" style={{ backgroundColor: UserData.ques40 == "" ? "" : "green" }}>40</div> <br />
+                  
+                  
            </div>
         )}
 
