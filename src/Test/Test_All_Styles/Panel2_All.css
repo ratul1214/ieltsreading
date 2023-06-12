@@ -1,0 +1,92 @@
+.Panel2Section{
+    padding:25px;
+}
+
+.palne2_div1{ 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+     height:40px;
+     width:380px;
+     background:#d7e6dc;
+      margin-left:auto;
+}
+
+.palne2_div1 h1{
+    margin-left:10px;
+    font-size: 1.4rem;
+    color:black;
+}
+
+.palne2_div1 .btns{
+    display:flex;
+    margin-left:auto
+}
+
+.palne2_div1 .btns button{
+    width:70px;
+    height:30px;
+    margin-right:4px;
+    background-color: blue;
+    color: white;
+}
+
+
+/* panel2_div2 styling */
+
+.palne2_div2{
+    margin:16px;
+}
+.palne2_div2 .btn{
+    width:130px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: 6px;
+}
+.palne2_div2 .btn i{
+    font-size:1.3rem;
+}
+
+
+
+/* panel2_div3  form  styling */
+.panel2_div3{
+    padding-bottom:30px;
+}
+.form_divsQuestions{
+    padding: 10px;
+}
+.form_divsQuestions h3{
+    margin-top:-1px;
+}
+
+.form_divsQuestions .questions{
+    display:flex;
+    margin-bottom:17px;
+}
+
+.form_divsQuestions .questions .numberOfQuestion{
+    text-align:center;
+    box-sizing:border-box;
+    padding-top:7px;
+    color:black;
+    font-size:.8rem;
+    margin-top:-10px;
+    margin-right:12px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:aqua;
+}
+
+.form_divsQuestions .questions input[type="text"]{
+    margin-top: -14px;;
+    width: 130px;
+    height:20px;
+    padding: 4px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid green;
+}

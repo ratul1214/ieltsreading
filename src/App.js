@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 function App() {
   const [handlePanelfontSize , sethandlePanelfontSize] = useState(20);
- //send all Userdata to Review Page which data got from all the panel form sections by examData---- 
+ //send all Userdata to Review Page which data got from all the panel form sections by 
               const [UserData , setUserdata] = useState({
                     ques1:"",ques2:'',ques3:"",ques4:"",ques5:'',ques6:'',ques7:'',ques8:"",ques9:'',ques10:"",
                     ques11:"",ques12:"" , ques13:"", ques14:"",ques15:'',ques16:"",ques17:"",ques18:'',ques19:'',
@@ -21,16 +21,12 @@ function App() {
 
 //function for handle_Panel_Forms_Inputs---------------
                       const handleChange =(x) =>{   
-                        const Names = x.target.name;
-                        const Values = x.target.value
-                              setUserdata((objs) =>{
+                           const Names = x.target.name;
+                             const Values = x.target.value
+                                 setUserdata((objs) =>{
                                   return {...objs ,[Names]: Values}
-                              });
-                          }
-
-console.log(UserData)
-
-
+                                  });
+                              }
 
 
 

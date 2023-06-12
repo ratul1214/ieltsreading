@@ -1,0 +1,168 @@
+.HeaderSection{
+    line-height:0;
+}
+.first_row{
+display:grid;
+margin-right:50px;
+margin-left:100px;
+grid-template-columns: auto auto auto auto;
+grid-gap: 0;
+box-sizing:border-box;
+justify-content: space-around;
+align-items: center;
+z-index:1;
+background:#fff;
+}
+
+.first_row .divs_1{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:12px;
+    margin-right:-20px;
+}
+.first_row .divs_1  .div_1{
+    width:120px;
+    height:126px;
+    background: navy;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    display: block;
+    text-align:center;
+    border-radius:7px; 
+    line-height: 7px;
+}
+.first_row .divs_1 .div_1 h1{
+     font-size: 2.3rem;
+}
+.first_row .divs_1 .div_1 p{
+   text-decoration: underline;
+   font-size: .7rem;
+   margin-top: -2px;
+   margin-bottom: 17px;
+}
+
+
+
+
+
+.first_row .divs_1 .div_2{
+    display: block;
+    line-height: 13px;
+    background-color: transparent;
+}
+
+.first_row .divs_1 .div_2 .sub{
+    line-height:-0;
+    letter-spacing: 2px;;
+}
+.first_row .divs_1 .div_2 .sub p{
+    padding-top: 10px;
+}
+
+
+
+
+
+.first_row .divs_2{
+    color:black;
+    margin-right:-20px;
+}
+.first_row .divs_2 .sub_1{
+    display: flex;
+    column-gap:13px;
+}
+.first_row .divs_2 .sub_1 i{
+    font-size:1.4rem;
+    padding-top:2px;
+}
+.first_row .divs_2 .sub_2{
+    display: flex;
+    column-gap:13px;
+}
+.first_row .divs_2 .sub_2 i{
+    font-size:1.4rem;
+    padding-top:2px;
+}
+.first_row .divs_2 .sub_2 p{
+    padding-top:5px;
+}
+.first_row .divs_2 .sub_3{
+    display: flex;
+    column-gap:13px;
+}
+.first_row .divs_2 .sub_3 i{
+    font-size:1.4rem;
+    padding-top:2px;
+}
+.first_row .divs_2 .sub_3 p{
+    padding-top:5px;
+}
+
+.first_row .divs_3{
+    text-align:center;
+    line-height:22px;
+    margin-right:-20px;
+}
+.first_row .divs_3 i{
+    font-size:4.4rem;
+    color : blue;
+}
+.first_row .divs_3 p{
+    font-style: italic;
+}
+
+.first_row .divs_4{
+    line-height:2.6rem;
+    font-size:3rem;
+    color:skyblue;
+}
+.first_row .divs_4 span{
+    font-size:4rem;
+}
+
+
+
+
+/* Second Row styling */
+.second_row{
+    height:47px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:3rem;
+    font-size:1.3rem;
+    border-bottom: 2px solid gray;
+} 
+.second_row .toggleMenu{
+    display:flex;
+    gap:7px;
+}
+.second_row .toggleMenu h3{
+    font-size:20px;
+}
+.menuIcon{
+    margin-top:3px;
+}
+.icons-manu{
+    margin-right:15px;
+}
+.icons-manu .icons{
+    display:flex;
+    gap:4rem;
+}
+.icons-manu .icons li{
+    list-style:none;
+    color:black;
+    margin:3px;
+}
+.logo-for-header{
+    line-height:12px;
+    font-size:1.3rem;
+    color:skyblue;
+}
+.logo-for-header span{
+    font-size:3rem;
+    padding-left:3px;
+    margin-bottom:4rem;
+}

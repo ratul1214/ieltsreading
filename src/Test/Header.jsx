@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import "./Test_All_Styles/Header.css";
 // import {BrowserRouter, Route, Routes} from "react-router";
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 //icons---------
 import {BsArrowUp} from "react-icons/bs";
@@ -34,16 +35,16 @@ import {BsChevronUp} from "react-icons/bs"
 
 
 
-// main sector--------------
+// main Rendering--------------
   return (
-    <Wrapper>
+    <section className='HeaderSection'>
 
 {/* for-Header_toggle-section it will open when will click Show Infor ---*/}
                         { toggleTestInfo && (<div className="first_row">
 
                               <div className="divs_1">
                                               <div className="div_1">
-                                                      <h1>IELTS</h1>
+                                                      <h1>IELTS</h1> 
                                                       <p>AC Reading..</p>
                                                       <h3>Volume 3</h3>
                                               </div>
@@ -133,13 +134,13 @@ import {BsChevronUp} from "react-icons/bs"
                     </ul>
                       </div>
                       
-{/* hide this particular section when some one click on Show Information Icon----- */}
+                 {/* hide this particular section when some one click on Show Information Icon----- */}
                            {
                              toggleTestInfo ? "" : (<div className="logo-for-header"><h3>IELTS <br /> <span>.</span> LIve</h3> </div>)
                            }
                   </div>  
           
-        </Wrapper>
+        </section>
       )
 };
 
@@ -150,180 +151,6 @@ import {BsChevronUp} from "react-icons/bs"
 
 
 export default Header
-
-
-
-
-
-
-
-// using the stylend-component for Css -Styling.....
-const Wrapper = styled.section`
-line-height:0;
-
-.first_row{
-display:grid;
-margin-right:20px;
-grid-template-columns: auto auto auto auto;
-box-sizing:border-box;
-justify-content: space-around;
-align-items: center;
-z-index:1;
-background:#fff;
-
- .divs_1{
-     display:grid;
-     grid-template-columns: auto auto;
-     grid-column-gap:12px;
-     margin-right:-20px;
-         .div_1{
-           width:120px;
-           height:120px;
-           background: navy;
-           color: white;
-           box-sizing:border-box;
-           overflow:hidden;
-           text-align:center;
-           line-height: 14px;
-           border-radius:7px;
-               h1{
-                  font-size:2.2rem;
-               }
-                 p{
-                   margin-top:-14px;
-                   font-size:.8rem;
-                   text-decoration:underline;
-                   
-                 }
-         }
-         .div_2{
-           line-height: 13px;
-           .sub{
-              line-height:-0;
-                letter-spacing: 2px;;
-                p{
-                 padding-top:10px;
-                }
-           }
-         }
-    }
-
-}
-
-// -----
-   .divs_2{
-     color:black;
-     margin-right:-20px;
-        .sub_1{
-         display: flex;
-         column-gap:13px;
-               i{
-                 font-size:1.4rem;
-                 padding-top:2px;
-               }
-
-        }
-        .sub_2{
-         display: flex;
-         column-gap:13px;
-             i{
-               font-size:1.4rem;
-               padding-top:2px;
-             }
-             p{
-               padding-top:5px;
-             }
-        }
-        .sub_3{
-         display: flex;
-         column-gap:13px;
-             i{
-               font-size:1.4rem;
-               padding-top:2px;
-             }
-             p{
-               padding-top:5px;
-             }
-        }
-   }
-// ------
-   .divs_3{
-     text-align:center;
-     line-height:22px;
-     margin-right:-20px;
-          i{
-           font-size:4.4rem;
-           color : blue;
-
-          }
-          p{
-           font-style: italic;
-          }
-   }
-
-   .divs_4{
-     line-height:2.6rem;
-     font-size:3rem;
-     color:skyblue;
-         span{
-           font-size:4rem;
-         }
-   }
-
-
-// secont---row------------
- .second_row { 
-         height:47px;
-           display:flex;
-           justify-content:center;
-           align-items:center;
-           column-gap:3rem;
-         font-size:1.3rem;
-         border-bottom: 2px solid gray; 
-    }
-     .toggleMenu{
-       display:flex;
-       gap:7px;
-       
-           h3{
-             font-size:20px;
-           }
-           
-     }
-     .menuIcon{
-       margin-top:3px;
-     }
-       .icons-manu{
-         margin-right:15px;
-       }
- .icons{
-     display:flex;
-     gap:4rem;
-     li{
-          list-style:none;
-           color:black;
-           margin:3px;
-     }
- }
-
- .logo-for-header{
-   line-height:12px;
-      font-size:1.3rem;
-      color:skyblue;
-   span{
-     font-size:3rem;
-     padding-left:3px;
-     margin-bottom:4rem;
-   }
- }
-`
-
-
-
-
-
-
-
 
 
 

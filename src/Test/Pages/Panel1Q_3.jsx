@@ -1,5 +1,6 @@
 import React from 'react';
-import Styled from "styled-components"
+import "../Test_All_Styles/Panel1_All.css";
+//end importing
 
 
 
@@ -11,7 +12,7 @@ import Styled from "styled-components"
     
 
   return (
-    <Wrapper>
+    <section className='Panel1Section'>
                     <div className="panel_div_1">
                          <h4>Reading Passages 3</h4>
                             <h4>Question :----</h4>
@@ -36,37 +37,10 @@ import Styled from "styled-components"
 
                      </div>   
 
-    </Wrapper>
+    </section>
   )
 } 
 
 
 export default Pane1Q_3
-
-
-
-
-  // for styling----
-  const Wrapper = Styled.section`
-  height: auto;
-   text-align:justify;
-   width: 100%;
-   
-.panel_div_1{
-   margin-top:10px;
-   line-height:14px;
-}
-      .panel_div_2{
-        margin-bottom:100px;
-            p{
-              padding-bottom:5px;
-                  span{
-                      font-size:1.4rem;
-                      color:red;
-                  }
-          }
-      }
-`
-
-
 

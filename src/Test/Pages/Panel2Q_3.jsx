@@ -1,5 +1,5 @@
 import React ,{useState} from 'react';
-import styled from 'styled-components';
+import "../Test_All_Styles/Panel2_All.css";
 import {GiNotebook} from "react-icons/gi"
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 //main--------------------------
      return (
-    <Wrapper>
+    <section className='Panel2Section'>
                   <div className="palne2_div1">
                               <h1>Chapter-3</h1>
                               <div className="btns">
@@ -161,7 +161,7 @@ import { Link } from 'react-router-dom';
 
                </form>
 
-    </Wrapper>
+    </section>
   )
 };
 
@@ -170,101 +170,3 @@ import { Link } from 'react-router-dom';
 
 export default Panel2Q_3
 
-
-
-// for styling-----
-   
-
-
-// for styling this component via styled-compoennt--  
-const Wrapper = styled.section`
-padding:30px;
-
- .palne2_div1{ 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-sizing:border-box;
-     height:40px;
-     width:370px;
-     background:#d7e6dc;
-     margin-left:auto;
-             h1{
-                   margin-left:10px;
-                   font-size: 1.4rem;
-                   color:black;
-             }  
-             .btns{
-                   display:flex;
-                   margin-left:auto;
-                               button{
-                                     width:70px;
-                                     height:30px;
-                                     margin-right:4px;
-                                     background-color: blue;
-                                     color: white;
-                               }
-             }
- }
-
-
-//panel2_div2--------
-             .palne2_div2{
-                   margin-top:5px;
-             }      
-
-             .btn{
-                   width:130px;
-                   display:flex;
-                   justify-content:space-between;
-                   align-items:center;
-                   border-radius: 6px;
-                         i{
-                               font-size:1.3rem;
-                         }
-                   }
-             }
-
-//panel2_div3------form-styling--------
-            .panel2_div3{
-                  padding-bottom:30px;
-                  .form_divsQuestions{
-                               h3{
-                                     margin-top:-1px;
-                               }
-                         .questions{
-                                 display:flex;
-                                 margin-bottom:17px;
-                                      .numberOfQuestion{
-                                           text-align:center;
-                                           box-sizing:border-box;
-                                           padding-top:7px;
-                                           color:black;
-                                           font-size:.8rem;
-                                           margin-top:-10px;
-                                           margin-right:12px;
-                                           width:30px;
-                                           height:30px;
-                                           border-radius:50%;
-                                           background:aqua;
-                                                      }
-                                        input[type="text"]{
-                                           margin-top: -14px;;
-                                           width: 130px;
-                                           height:20px;
-                                           padding: 4px;
-                                           border: 0;
-                                           outline: 0;
-                                           border-bottom: 2px solid green;
-                                        }
-                                       #panel2_divSelector1{
-                                            height:25px;
-                                       }         
-
-                            }
-                         
-                  }
-            }
-
-
-`
