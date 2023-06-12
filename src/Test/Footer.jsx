@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Test_All_Styles/Footer.css";
+import "./TestAllStyles/Footer.css";
 import CounterDown from './CounterDown';
 //Icons---
 import {FaRegCalendarAlt} from "react-icons/fa";

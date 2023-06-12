@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Test_All_Styles/Panel1_All.css";
+import "../TestAllStyles/Panel1All.css";
 //end importing
 
 

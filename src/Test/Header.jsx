@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import "./Test_All_Styles/Header.css";
-// import {BrowserRouter, Route, Routes} from "react-router";
-// import styled from 'styled-components';
+import "./TestAllStyles/Header.css";
+// import {BrowserRouter, Route, Routes} from "react-router";;
 
 //icons---------
 import {BsArrowUp} from "react-icons/bs";

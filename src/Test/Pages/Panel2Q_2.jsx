@@ -1,5 +1,5 @@
 import React ,{useState} from 'react';
-import "../Test_All_Styles/Panel2_All.css";
+import "../TestAllStyles/Panel2All.css";
 import {GiNotebook} from "react-icons/gi"
 import { Link } from 'react-router-dom';
 //end of importing.....

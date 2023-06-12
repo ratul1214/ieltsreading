@@ -1,19 +1,17 @@
 import React  from 'react';
-import styled from 'styled-components';
+import "../TestAllStyles/Preview.css";
 // end of the importing..
-
 
 
 
 function Preview({UserData , handleReviewPage}) {
   return (
-      <Wrapper>
-              <div className="ReviewContainer">
-                  <div className="Review_div_1">
+      <section className='PreviewSection'>
+                  <div className="ReviewDiv1">
                         <h1 className='nameReview'>Review</h1>
                   </div>
   
-              <div className="Review_div_2">
+              <div className="ReviewDiv2">
                      <div className="div">Q1: {UserData.ques1}</div>
                      <div className="div">Q2:{UserData.ques2}</div>
                      <div className="div">Q3:{UserData.ques3}</div>
@@ -39,13 +37,11 @@ function Preview({UserData , handleReviewPage}) {
                      <div className="div">Q22: {UserData.ques22}</div>
                      <div className="div">Q23: {UserData.ques23}</div>
                      <div className="div">Q24: {UserData.ques24}</div>
-                     <div className="div">Q24: {UserData.ques25}</div>
                      <div className="div">Q25: {UserData.ques25}</div>
                      <div className="div">Q26: {UserData.ques26}</div>
                      <div className="div">Q27: {UserData.ques27}</div>
                      <div className="div">Q28: {UserData.ques28}</div>
                      <div className="div">Q29: {UserData.ques29}</div>
-
                      <div className="div">Q30: {UserData.ques30}</div>
                      <div className="div">Q31: {UserData.ques31}</div>
                      <div className="div">Q32: {UserData.ques32}</div>
@@ -61,91 +57,14 @@ function Preview({UserData , handleReviewPage}) {
   
               </div>
   
-              <div className="div_3">
-                  <button onClick={handleReviewPage}>Close</button>
-              </div>
+                  <div className="ReviewDiv3">
+                      <button onClick={handleReviewPage}>Close</button>
+                  </div>
   
-              </div>
-  
-      </Wrapper>
+      </section>
   )
 };
 
 
 
 export default Preview
-
-
-
-//for styling this component........
-      const Wrapper = styled.section`
-      .ReviewContainer {
-          height:520px;
-        width: 800px;
-        border: 1px solid green;
-        position: fixed;
-        background:white;
-        top: 20px;
-        border-radius: 10px;
-        left:20%;
-        box-sizing: border-box;
-        transition: 0.5s all ease-in-out;
-      }
-        .Review_div_1{
-           width:100%;
-           border:none;
-           background-color:#fff; 
-            opacity: 0.7;
-           border-bottom: .8px solid gray;
-                   .nameReview{
-                     font-size:2rem;
-                     padding-left:14px;
-                   }
-       }
-   .Review_div_2{
-     height:auto;
-     background:#fff;
-     box-sizing: border-box;
-     padding:20px;
-     display: grid;
-     grid-template-columns: repeat(4 , 1fr);
-     grid-gap: 0;
-     opacity: 0.7;
-     border-bottom: .8px solid gray;
-        .div{
-         width: 180px;
-         height: 32px;
-         border: 1px solid gray;
-         display:flex;
-         overflow: hidden;
-         padding:5px;
-         box-sizing: border-box;
-         justify-content: start;
-         align-items: center;
-         font-weight: 700;
-
-        }
-   }
-
-   .div_3{
-      width:100px;
-      padding:10px;
-      margin-left:auto;
-         button{
-            width:100px;
-            padding:10px;
-            border-radius: 4px;
-            
-           
-         }
-         button:hover{
-           background-color: rgb(127, 197, 165);
-           border-radius: 4px;
-       }
-      
-   }
-
-
-`
-
-

@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
-import "./Test_All_Styles/Panel2_All.css";
 import {GiNotebook} from "react-icons/gi"
 import { Link } from 'react-router-dom';
+import "./TestAllStyles/Panel2All.css";
 
 //end of importing.....
 
@@ -193,43 +193,4 @@ import { Link } from 'react-router-dom';
 
 
 export default Panel2
-
-
-
-
-
-
-// // for styling this component via styled-compoennt--  
-// const Wrapper = styled.section`
-
-
-
-// //panel2_div3------form-styling--------
-//                  .panel2_div3{
-                  
-//                        .form_divsQuestions{
-//                                     h3{
-                                          
-//                                     }
-//                               .questions{
-                                 
-//                                            .numberOfQuestion{
- 
-//                                                            }
-//                                              input[type="text"]{
-  
-//                                              }
-//                                             #panel2_divSelector1{
-//                                                  height:25px;
-//                                             }         
-
-//                                  }
-                              
-//                        }
-//                  }
-
- 
-
-
-
 
