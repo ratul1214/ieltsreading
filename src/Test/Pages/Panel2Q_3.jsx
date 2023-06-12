@@ -11,29 +11,6 @@ import { Link } from 'react-router-dom';
  function Panel2Q_3({handleChange }) {
   const[showNotePad , setShowNotePad] = useState(false);
 
-  const [examData3 , setExamData] = useState({
-      ques30:"",ques31:'',ques32:"",ques33:"",ques34:'',ques35:'',ques36:'',ques37:"",ques38:'',ques39:"",
-      ques40:""
- });
- const{ques30,ques31,ques32,ques33,ques34,ques35,ques36,ques37,ques38,ques39,ques40} = examData3
-                  const handleValueChange = (x) =>{
-                       const Nmaes = x.target.name;
-                       const Values = x.target.value;
-                       setExamData({...examData3,[Nmaes]:Values});
-                       handleChange(examData3)
-                       // console.log(examData)
-                  }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //main--------------------------
@@ -66,7 +43,7 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                       the main factor effecting rates :
                                                 </label>
-                                                <select name="ques30" id="ques30" value={ques30} onChange={handleValueChange}>
+                                                <select name="ques30" id="ques30"  onChange={handleChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -79,7 +56,7 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                        A picture of urban life taken over by nature : 
                                                 </label>
-                                                <select name="ques31" id="ques31" value={ques31} onChange={handleValueChange}>
+                                                <select name="ques31" id="ques31"  onChange={handleChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -92,7 +69,7 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                        expriences of enviromental damage caused by humans : 
                                                 </label>
-                                                <select name="ques32" id="ques32" value={ques32} onChange={handleValueChange}>
+                                                <select name="ques32" id="ques32"  onChange={handleChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -105,7 +82,7 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                        Positive result from a study : 
                                                 </label>
-                                                <select name="ques33" id="ques33" value={ques33} onChange={handleValueChange}>
+                                                <select name="ques33" id="ques33" onChange={handleChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -118,7 +95,7 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <select  name="ques34" id="ques34" value={ques34} onChange={handleValueChange}>
+                                                <select  name="ques34" id="ques34"  onChange={handleChange}>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
                                                       <option value="something">something</option>
@@ -138,42 +115,42 @@ import { Link } from 'react-router-dom';
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text"  name="ques35" id="ques35" value={ques35} className='inputs' onChange={handleValueChange}/>
+                                                <input type="text"  name="ques35" id="ques35"  className='inputs' onChange={handleChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>36</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text"  name="ques36" id="ques36" value={ques36} className='inputs' onChange={handleValueChange}/>
+                                                <input type="text"  name="ques36" id="ques36"  className='inputs' onChange={handleChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>37</h1>
                                                 <label htmlFor="ques1Label">
                                                       the kind of the information gathered from scientific records : 
                                                 </label>
-                                                <input type="text"  name="ques37" id="ques37" value={ques37} className='inputs'  onChange={handleValueChange}/>
+                                                <input type="text"  name="ques37" id="ques37"  className='inputs'  onChange={handleChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>38</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text"   name="ques38" id="ques38" value={ques38} className='inputs'  onChange={handleValueChange}/>
+                                                <input type="text"   name="ques38" id="ques38"  className='inputs'  onChange={handleChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>39</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text"   name="ques39" id="ques39" value={ques39} className='inputs'  onChange={handleValueChange}/>
+                                                <input type="text"   name="ques39" id="ques39"  className='inputs'  onChange={handleChange}/>
                                    </div>
                                    <div className="questions">
                                                 <h1  className='numberOfQuestion'>40</h1>
                                                 <label htmlFor="ques1Label">
                                                      ation gathered from scientific records : 
                                                 </label>
-                                                <input type="text"  name="ques40" id="ques40" value={ques40} className='inputs' onChange={handleValueChange} />
+                                                <input type="text"  name="ques40" id="ques40"  className='inputs' onChange={handleChange} />
                                    </div>
 
 

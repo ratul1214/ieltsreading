@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import styled from 'styled-components';
 // end of the importing..
 
@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 
 function Preview({UserData , handleReviewPage}) {
-     const[CloseReview , setCloseReview] = useState(true);
   return (
       <Wrapper>
               <div className="ReviewContainer">
@@ -78,23 +77,21 @@ export default Preview
 
 
 
-//for styling this component.....
-  
-
-const Wrapper = styled.section`
-.ReviewContainer {
-    height:520px;
-   width: 800px;
-   border: 1px solid green;
-   position: fixed;
-   background:white;
-   top: 20px;
-   border-radius: 10px;
-   left:20%;
-   box-sizing: border-box;
-   transition: 0.5s all ease-in-out;
-}
- .Review_div_1{
+//for styling this component........
+      const Wrapper = styled.section`
+      .ReviewContainer {
+          height:520px;
+        width: 800px;
+        border: 1px solid green;
+        position: fixed;
+        background:white;
+        top: 20px;
+        border-radius: 10px;
+        left:20%;
+        box-sizing: border-box;
+        transition: 0.5s all ease-in-out;
+      }
+        .Review_div_1{
            width:100%;
            border:none;
            background-color:#fff; 
@@ -120,6 +117,7 @@ const Wrapper = styled.section`
          height: 32px;
          border: 1px solid gray;
          display:flex;
+         overflow: hidden;
          padding:5px;
          box-sizing: border-box;
          justify-content: start;

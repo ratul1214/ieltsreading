@@ -10,7 +10,7 @@ import Styled from "styled-components"
  function Panel1() {
        
   return (
-    <Wrapper>
+        <Wrapper>
                     <div className="panel_div_1">
                          <h4>Reading Passages 1</h4>
                             <h4>Question : 1-13</h4>
@@ -39,7 +39,18 @@ export default Panel1
 
 
 
-//for stylinng this component........
+
+
+
+
+
+
+
+
+
+
+
+//stylinng for this component........
 const Wrapper = Styled.section`
                    height: auto;
                     text-align:justify;

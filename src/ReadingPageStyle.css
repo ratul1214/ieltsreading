@@ -1,50 +1,47 @@
 
 /*for mainContainer height set-up*/
-.mainContainer{
-    height: 100%;
-}
+        .mainContainer{
+            height: 100%;
+        }
 
-/* for reactifyign all scroll-bars*/
 
-/* .panel1 .panel2{
-    margin-bottom: 20px;
-    padding-bottom: 20px;
 
- } */
 
-.panel_1{
-    background-color:#d7e6dc;
-    padding:35px;
-    
-}
-.panel_1::-webkit-scrollbar{
-    width: 12px;
-}
-.panel_1::-webkit-scrollbar-track{
-     border-radius: 20px;
 
-}
-.panel_1::-webkit-scrollbar-thumb{
-    border-radius: 50px;
-    background-color:rgb(26, 119, 111);
+/* for panels_Scrollbar  */
+        .panel_1{
+            background-color:#d7e6dc;
+            padding:35px;
+            
+        }
+        .panel_1::-webkit-scrollbar{
+            width: 12px;
+        }
+        .panel_1::-webkit-scrollbar-track{
+            border-radius: 20px;
 
-}
+        }
+        .panel_1::-webkit-scrollbar-thumb{
+            border-radius: 50px;
+            background-color:rgb(26, 119, 111);
+
+        }
 
 
 
  /* for-spliting height */
- .split-sash-content {
-    width: 13px;
-    height: 100%;
-    z-index: -1;
-}
+        .split-sash-content {
+            width: 13px;
+            height: 100%;
+            z-index: -1;
+        }
 
 
-.split-sash-content.split-sash-content-vscode.split-sash-content-active {
-    background-color: gray;
-}
-.split-sash-content{
-    background-color:gray;
-}
+        .split-sash-content.split-sash-content-vscode.split-sash-content-active {
+            background-color: gray;
+        }
+        .split-sash-content{
+            background-color:gray;
+        }
 
 

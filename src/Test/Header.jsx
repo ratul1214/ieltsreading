@@ -23,12 +23,22 @@ import {BsChevronUp} from "react-icons/bs"
 
 
  function Header({handleIncressFontSize , handleDecressFontSize}) {
-  const [toggleTestInfo , setToggleTestInfo] = useState(false);
+
+  //state for header toggling---when you click the show information-----
+             const [toggleTestInfo , setToggleTestInfo] = useState(false);
+
+
+
+
+
+
+
 
 // main sector--------------
   return (
     <Wrapper>
-                        {/* for-toggle-section    */}
+
+{/* for-Header_toggle-section it will open when will click Show Infor ---*/}
                         { toggleTestInfo && (<div className="first_row">
 
                               <div className="divs_1">
@@ -83,46 +93,49 @@ import {BsChevronUp} from "react-icons/bs"
                 )};
 {/* second_row ------------*/}
                   <div className="second_row">
-                  <div className="toggleMenu">
-                          <i className='menuIcon' onClick={() =>{setToggleTestInfo(!toggleTestInfo)}}>
-                                   {
-                                     toggleTestInfo ? <AiOutlineDown /> : <BsChevronUp />
-                                   }
-                          </i>
-                          <h3>Show Test Inf.</h3>
-                    </div>
+
+                         {/* the icons for showing more information in header by clicking             */}   
+                          <div className="toggleMenu">
+                                  <i className='menuIcon' onClick={() =>{setToggleTestInfo(!toggleTestInfo)}}>
+                                          {
+                                            toggleTestInfo ? <BsChevronUp /> : <AiOutlineDown />
+                                          }
+                                  </i>
+                                  <h3>Show Test Inf.</h3>
+                            </div>
 
                       <div className="icons-manu">
                           <ul className='icons'>
                                   <li className='icon'>
-                                      <a href="#"><BsShare /></a>
+                                      <BsShare />
                                   </li>
                                   <li className='icon'>
-                                      <a href="#"><BsFillExclamationTriangleFill /></a>
+                                      <BsFillExclamationTriangleFill />
+                                  </li>
+           {/* handle_panels_FontSize by this clicking functions.....*/}
+                                  <li className='icon'>
+                                        <BsArrowUp onClick={handleIncressFontSize}/>
+                                             <FaTextWidth />   
+                                        <BsArrowDown onClick={handleDecressFontSize}/>
                                   </li>
                                   <li className='icon'>
-                                        <a href="#"><BsArrowUp onClick={handleIncressFontSize}/></a>
-                                              <a href="#"><FaTextWidth /></a>    
-                                        <a href="#" onClick={handleDecressFontSize}><BsArrowDown /></a>
+                                     <FaDownload />
                                   </li>
                                   <li className='icon'>
-                                      <a href="#"><FaDownload /></a>
+                                      <FaQuestionCircle />
                                   </li>
                                   <li className='icon'>
-                                      <a href="#"><FaQuestionCircle /></a>
+                                     <BsFillCloudHaze2Fill />
                                   </li>
                                   <li className='icon'>
-                                      <a href="#"><BsFillCloudHaze2Fill /></a>
-                                  </li>
-                                  <li className='icon'>
-                                      <a href="#"><TbArrowBigLeftLinesFilled /></a>
+                                      <TbArrowBigLeftLinesFilled />
                                   </li>
                     </ul>
                       </div>
                       
+{/* hide this particular section when some one click on Show Information Icon----- */}
                            {
-                             toggleTestInfo ? "" : (<div className="logo-for-header"><h3>IELTS <br /> <span>.</span> LIve</h3>
-                       </div>)
+                             toggleTestInfo ? "" : (<div className="logo-for-header"><h3>IELTS <br /> <span>.</span> LIve</h3> </div>)
                            }
                   </div>  
           
@@ -144,27 +157,16 @@ export default Header
 
 
 
-
-
-
-
-
-
-
-
-
-
 // using the stylend-component for Css -Styling.....
 const Wrapper = styled.section`
 line-height:0;
 
 .first_row{
-padding:10px;
 display:grid;
-margin-right:50px;
+margin-right:20px;
 grid-template-columns: auto auto auto auto;
-grid-column-gap:1rem;
-justify-content: space-evenly;
+box-sizing:border-box;
+justify-content: space-around;
 align-items: center;
 z-index:1;
 background:#fff;
@@ -269,15 +271,6 @@ background:#fff;
    }
 
 
-
-
-
-
-
-
-
-
-
 // secont---row------------
  .second_row { 
          height:47px;
@@ -307,13 +300,9 @@ background:#fff;
      display:flex;
      gap:4rem;
      li{
-        list-style:none;
-         a{
-           text-decoration:none;
+          list-style:none;
            color:black;
            margin:3px;
-
-         }
      }
  }
 
